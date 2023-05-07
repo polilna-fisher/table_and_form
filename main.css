@@ -1,0 +1,26 @@
+.container{
+    padding: 20px;
+}
+.button_container{
+    margin-bottom: 20px;
+}
+.hidden{
+    display: none;
+}
+.error{
+    color: crimson;
+    margin-top: 10px;
+}
+
+.field_error{
+    border: 1px solid crimson
+}
+.field_error-message{
+    margin-top: 5px;
+    font-size: 11px;
+    color: crimson;
+
+}
+.col{
+    cursor: pointer;
+}

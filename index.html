@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="button_container">
+            <button type="button" class="btn btn_add btn-outline-secondary">+ Add</button>
+        </div>
+
+        <div class="table_container">
+            <table class="table table-striped-columns" id="table">
+                <thead>
+                <tr>
+                    <th class="col" scope="col">#</th>
+                    <th class="col sort"  scope="col">
+                        <div class="headerName" sortBy="name">ФИО студента</div>
+                        <div class="col-md-10">
+                            <input style="margin-top: 11px" type="text" class="form-control search" filterBy="name" id="validationCustom011" value="">
+                        </div>
+                    </th>
+                    <th class="col sort" scope="col">
+                        <div class="headerName" sortBy="faculty" >Факультет</div>
+                        <div class="col-md-10">
+                            <input style="margin-top: 11px" type="text" class="form-control search" filterBy="faculty" id="validationCustom012" value="">
+                        </div>
+                    </th>
+                    <th class="col sort" scope="col">
+                        <div class="headerName" sortBy="birthday" >Дата рождения и возраст</div>
+                        <div class="col-md-10">
+                            <input style="margin-top: 11px" type="text" class="form-control search" filterBy="birthday" id="validationCustom013" value="">
+                        </div>
+                    </th>
+                    <th class="col sort"  scope="col">
+                        <div class="headerName" sortBy="startEducation">Год обучения и курс</div>
+                        <div class="col-md-10">
+                            <input style="margin-top: 11px" type="text" class="form-control search" filterBy="startEducation" id="validationCustom014" value="">
+                        </div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody class="tbody" id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form_container hidden">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+<!--                    <p class="field_error-message">Required</p>-->
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Middle name</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom03" value="" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">Birthday</label>
+                    <input type="date" class="form-control" id="validationCustom04" value="" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">Start education</label>
+                    <input type="date" class="form-control" id="validationCustom05" value="" required>
+                </div>
+
+
+                <div class="col-md-4">
+                    <label for="validationCustom06" class="form-label">Faculty</label>
+                    <select class="form-select" id="validationCustom06" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Linguistic</option>
+                        <option>Biology</option>
+                        <option>Chemistry</option>
+                    </select>
+                </div>
+
+
+                <div class="col-12">
+                    <button class="btn btn_submit btn-outline-secondary" type="button">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="validate.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
